@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="290dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="193dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:ignore="MissingConstraints">
+
+        <Spinner
+            android:id="@+id/ingredient2"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="315dp" />
+
+        <Spinner
+            android:id="@+id/ingredient3"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="366dp" />
+
+        <Spinner
+            android:id="@+id/ingredient1"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="263dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="141dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="196dp"
+        android:layout_marginTop="8dp"
+        android:onClick="retrieveRecipes"
+        android:text="@string/Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/cookthreetitle"
+        android:layout_width="258dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="cookthree"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735" />
+
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

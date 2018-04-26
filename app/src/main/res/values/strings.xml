@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">cookthree</string>
+    <string-array name="ingredients">
+        <item>Carrot</item>
+        <item>Turkey</item>
+        <item>Apple</item>
+        <item>Beef</item>
+        <item>Pork</item>
+        <item>Spinach</item>
+        <item>Salmon</item>
+        <item>Rice</item>
+    </string-array>
+
+    <string name="Search">Search</string>
+    <string name="title_activity_display_recipe">DisplayRecipeActivity</string>
+
+</resources>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F4F4EF"
     tools:context=".MainActivity">
-
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -53,6 +53,8 @@
         android:layout_marginTop="8dp"
         android:onClick="retrieveRecipes"
         android:text="@string/Search"
+        android:textColor="#EFEFEF"
+        android:background="#20232A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -61,14 +63,15 @@
 
     <TextView
         android:id="@+id/cookthreetitle"
-        android:layout_width="258dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="cookthree"
-        android:textSize="80dp"
+        android:textSize="125dp"
         android:textStyle="bold"
+        android:textColor="#A01D26"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

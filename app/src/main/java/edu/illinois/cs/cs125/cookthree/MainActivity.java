@@ -77,6 +77,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btnSearch.setVisibility(View.GONE);
     }
 
+    @Override
+    public void onBackPressed() {
+        WebView myWebView = (WebView) findViewById(R.id.webview);
+        myWebView.setVisibility(View.INVISIBLE);
+        Button btnSearch = (Button) findViewById(R.id.btnSearch);
+        btnSearch.setVisibility(View.VISIBLE);
+    }
+
     public void retrieveRecipes(View view, String ing1, String ing2, String ing3) {
         //Intent displayRecipes = new Intent(this, DisplayRecipeActivity.class);
         //startActivity(displayRecipes);

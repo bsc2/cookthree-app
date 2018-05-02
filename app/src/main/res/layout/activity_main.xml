@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="290dp"
-        android:layout_height="107dp"
+        android:layout_width="294dp"
+        android:layout_height="156dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="193dp"
         android:gravity="center_horizontal|center"
@@ -22,6 +22,12 @@
         app:layout_constraintVertical_chainStyle="spread_inside"
         tools:ignore="MissingConstraints">
 
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/protein" />
+
         <Spinner
             android:id="@+id/ingredient1"
             android:layout_width="match_parent"
@@ -29,12 +35,24 @@
             tools:layout_editor_absoluteX="54dp"
             tools:layout_editor_absoluteY="263dp" />
 
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vegetable" />
+
         <Spinner
             android:id="@+id/ingredient3"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
+            android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="54dp"
             tools:layout_editor_absoluteY="366dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/grain" />
 
         <Spinner
             android:id="@+id/ingredient2"
@@ -51,10 +69,10 @@
         android:layout_height="57dp"
         android:layout_marginBottom="196dp"
         android:layout_marginTop="8dp"
-        android:onClick="retrieveRecipes"
-        android:text="@string/Search"
-        android:textColor="#EFEFEF"
         android:background="#20232A"
+        android:onClick="retrieveRecipes"
+        android:text="What are we makin' today?"
+        android:textColor="#EFEFEF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -69,7 +87,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="cookthree"
-        android:textSize="125dp"
+        android:textSize="115dp"
         android:textStyle="bold"
         android:textColor="#A01D26"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"

@@ -2,41 +2,44 @@
     <string name="app_name">cookthree</string>
     <string-array name="ingredients_meats">
         <item>Beef</item>
-        <item>Turkey</item>
-        <item>Pork</item>
-        <item>Fish</item>
-        <item>Ham</item>
-        <item>Crab</item>
-        <item>Lamb</item>
         <item>Bacon</item>
+        <item>Crab</item>
+        <item>Fish</item>
+        <item>Turkey</item>
+        <item>Ham</item>
+        <item>Lamb</item>
+        <item>Pork</item>
         <item>Sausage</item>
     </string-array>
 
     <string-array name="ingredients_grains">
-        <item>Rice</item>
         <item>Bread</item>
         <item>Noodles</item>
+        <item>Oats</item>
+        <item>Rice</item>
     </string-array>
 
     <string-array name="ingredients_vegetables">
-        <item>Carrot</item>
-        <item>Spinach</item>
-        <item>Potato</item>
+        <item>Asparagus</item>
         <item>Broccoli</item>
-        <item>Peas</item>
-        <item>Mushroom</item>
+        <item>Bean sprouts</item>
+        <item>Carrot</item>
+        <item>Celery</item>
         <item>Cabbage</item>
         <item>Cauliflower</item>
         <item>Cucumber</item>
-        <item>Asparagus</item>
-        <item>Lettuce</item>
-        <item>Celery</item>
         <item>Eggplant</item>
         <item>Green beans</item>
-        <item>Bean sprouts</item>
+        <item>Mushroom</item>
+        <item>Potato</item>
+        <item>Peas</item>
+        <item>Spinach</item>
     </string-array>
 
     <string name="Search">Search</string>
     <string name="title_activity_display_recipe">DisplayRecipeActivity</string>
+    <string name="protein">Protein</string>
+    <string name="vegetable">Vegetable</string>
+    <string name="grain">Grain</string>
 
 </resources>

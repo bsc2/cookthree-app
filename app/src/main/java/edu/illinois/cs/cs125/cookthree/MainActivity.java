@@ -6,12 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 //import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -49,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         spIngredient2.setAdapter(adapter2);
 
         Spinner spIngredient3 = (Spinner) findViewById(R.id.ingredient3);
-        spIngredient3.setOnItemSelectedListener(this);
+        spIngredient2.setOnItemSelectedListener(this);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
                 R.array.ingredients_vegetables, android.R.layout.simple_spinner_item);
@@ -58,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         // Apply the adapter to the spinner
         spIngredient3.setAdapter(adapter3);
 
-        addListenerOnButton();
+    addListenerOnButton();
     }
 
     @Override
@@ -105,15 +109,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        //Toast.makeText(parent.getContext(),
-        //        "OnItemSelectedListener : " + parent.getItemAtPosition(position).toString(),
-        //        Toast.LENGTH_SHORT).show();
+
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+
 
     // get the selected dropdown list value
     public void addListenerOnButton() {
@@ -130,11 +134,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 Button btnSearch = (Button) findViewById(R.id.btnSearch);
                 btnSearch.setVisibility(View.INVISIBLE);
 
-//                Toast.makeText(MainActivity.this,
-//                        "OnClickListener : " +
-//                                "\nSpinner 1 : "+ String.valueOf(spIngredient1.getSelectedItem()) +
-//                                "\nSpinner 2 : "+ String.valueOf(spIngredient2.getSelectedItem()),
-//                        Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,
+                       // "OnClickListener : " +
+                        //        "\nSpinner 1 : "+ String.valueOf(spIngredient1.getSelectedItem()) +
+                        //        "\nSpinner 3 : "+ String.valueOf(spIngredient3.getSelectedItem()),
+                       // Toast.LENGTH_SHORT).show();
                 retrieveRecipes(v, String.valueOf(spIngredient1.getSelectedItem()), String.valueOf((spIngredient2.getSelectedItem())),
                         String.valueOf(spIngredient3.getSelectedItem()));
             }
